@@ -1,3 +1,4 @@
+// User 
 const user = {
   username: 'Alex',
   password: 'admin'
@@ -30,8 +31,11 @@ $form.addEventListener('submit', e => {
     } else if ($inputPassword.value.trim() !== user.password.trim()) {
       displayError(errorsMessages.noMatchPassword)
     } else {
+      displayError()
       $form.classList.add('hidden')
       $connexion.classList.remove('hidden')
     }
+    $form.reset()
   }
 })
+
