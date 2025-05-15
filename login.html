@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .hidden {
+            opacity: 0;
+        }
+        .form-hidden {
+            display: none;
+        }
+        .notification {
+          transition: all 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="content container">
+        <form class="form loginForm">
+            <h1 class="title">Connexion</h1>
+            <div class="notification is-danger hidden">
+                <!--<button class="delete"></button>-->
+                Erreur de login / password.
+              </div>
+            <div class="field">
+                <label class="label">Login</label>
+                <div class="control">
+                  <input class="input login" type="text">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Password</label>
+                <div class="control">
+                  <input class="input password" type="password">
+                </div>
+              </div>
+              <div class="control">
+                <button class="button is-link">Se connecter</button>
+              </div>
+        </form>
+        <div class="secure hidden">
+            <h1>Vous êtes connecté</h1>
+            <p>Texte sécurisé</p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
